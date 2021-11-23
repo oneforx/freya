@@ -1,0 +1,28 @@
+{
+  "root": "apps/imaeus-front-e2e",
+  "sourceRoot": "apps/imaeus-front-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/imaeus-front-e2e/cypress.json",
+        "devServerTarget": "imaeus-front:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "imaeus-front:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/imaeus-front-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["imaeus-front"]
+}

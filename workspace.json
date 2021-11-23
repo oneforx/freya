@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "imaeus-front": "apps/imaeus-front",
+    "imaeus-front-e2e": "apps/imaeus-front-e2e"
+  }
+}
