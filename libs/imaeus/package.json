@@ -2,9 +2,9 @@
   "name": "@oneforx/imaeus",
   "version": "0.1.0",
   "author": {
-    "email": "support@oneforx.com",
+    "email": "contact@oneforx.net",
     "name": "oneforx",
-    "url": "https://oneforx.com"
+    "url": "https://oneforx.net/imaeus"
   },
   "dependencies": {
     "react-router-dom": "6.0.2"
