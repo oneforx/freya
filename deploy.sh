@@ -5,7 +5,7 @@
 set -e
 
 # build
-pnpm run build imaeus-front
+pnpm run build
 
 # navigate into the build output directory
 cd dist/apps/imaeus-front
