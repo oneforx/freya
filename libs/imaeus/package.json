@@ -1,0 +1,17 @@
+{
+  "name": "@oneforx/imaeus",
+  "version": "0.1.0",
+  "author": {
+    "email": "support@oneforx.com",
+    "name": "oneforx",
+    "url": "https://oneforx.com"
+  },
+  "dependencies": {
+    "react-router-dom": "6.0.2"
+  },
+  "keywords": [
+    "react-library", "front-end-library", "front",
+    "library", "atomic", "component", "component-library",
+    "atomic-component"
+  ]
+}
