@@ -1,5 +1,7 @@
 
 
+Project under the upcoming license [OFX](https://github.com/oneforx/ofx) 
+
 # Imaeus
 
 This project was generated using [Nx](https://nx.dev).

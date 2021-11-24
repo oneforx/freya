@@ -1,12 +1,17 @@
 {
   "name": "@oneforx/imaeus",
-  "version": "0.1.1",
+  "version": "0.1.3",
+  "license": "OFX",
+  "homepage": "https://oneforx.github.io/imaeus",
   "author": {
     "email": "contact@oneforx.net",
     "name": "oneforx",
     "url": "https://oneforx.net"
   },
-  "homepage": "https://oneforx.net/imaeus",
+  "repository": {
+    "directory": "/tree/master/libs/imaeus",
+    "url": "https://github.com/oneforx/imaeus"
+  },
   "engines": {
     "node": ">= v12.18.4"
   },
