@@ -1,7 +1,7 @@
 module.exports = {
   plugins: {
     tailwindcss: {
-      config: './apps/imaeurs-front/tailwind.config.js'
+      config: './apps/imaeus-front/tailwind.config.js'
     },
     autoprefixer: {},
   },
