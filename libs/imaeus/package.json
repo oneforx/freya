@@ -1,8 +1,8 @@
 {
   "name": "@oneforx/imaeus",
   "version": "0.1.3",
-  "license": "OFX",
-  "homepage": "https://oneforx.github.io/imaeus",
+  "license": "MIT",
+  "homepage": "https://oneforx.net/imaeus",
   "author": {
     "email": "contact@oneforx.net",
     "name": "oneforx",
