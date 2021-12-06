@@ -3,9 +3,9 @@ import { TIcon } from './Field'
 import InputLabelFragment from './InputLabelFragment';
 
 export type TInputLabelIcons = InputProps & LabelProps & {
-    leftIcon: TIcon,
-    rightIcon: TIcon
-} 
+  leftIcon: TIcon,
+  rightIcon: TIcon
+}
 
 const InputLabelIcons = (props: TInputLabelIcons) => {
     return (

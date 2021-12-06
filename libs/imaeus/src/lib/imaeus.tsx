@@ -1,14 +1,22 @@
-import './imaeus.module.css';
+import { createContext, ReactChildren } from 'react';
+import './imaeus.css';
 
 /* eslint-disable-next-line */
-export interface ImaeusProps {}
+export interface ImaeusContextProps {
+  accessKey?: string,
+  children: React.ReactNode | ReactChildren
+}
+export type IImaeusContextStates = {
+}
 
-export function Imaeus(props: ImaeusProps) {
+export const ImaeusContext = createContext<IImaeusContextStates>({});
+
+export function ImaeusContextProvider ({ accessKey, children }: ImaeusContextProps) {
   return (
-    <div>
-      <h1>Welcome to Imaeus!</h1>
-    </div>
+    <ImaeusContext.Provider value={{ accessKey }}>
+      {children}
+    </ImaeusContext.Provider>
   );
 }
 
-export default Imaeus;
+export default ImaeusContext;

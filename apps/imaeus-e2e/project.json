@@ -1,0 +1,28 @@
+{
+  "root": "apps/imaeus-e2e",
+  "sourceRoot": "apps/imaeus-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/imaeus-e2e/cypress.json",
+        "devServerTarget": "imaeus:storybook"
+      },
+      "configurations": {
+        "ci": {
+          "devServerTarget": "imaeus:storybook:ci"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/imaeus-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["imaeus"]
+}

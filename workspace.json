@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "imaeus": "libs/imaeus",
+    "imaeus-e2e": "apps/imaeus-e2e",
     "imaeus-front": "apps/imaeus-front",
     "imaeus-front-e2e": "apps/imaeus-front-e2e"
   }
