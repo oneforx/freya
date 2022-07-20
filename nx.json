@@ -1,5 +1,5 @@
 {
-  "npmScope": "imaeus",
+  "npmScope": "freya",
   "affected": {
     "defaultBase": "main"
   },
@@ -51,5 +51,5 @@
       }
     }
   },
-  "defaultProject": "imaeus-front"
+  "defaultProject": "freya-front"
 }

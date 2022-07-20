@@ -1,0 +1,26 @@
+{
+  "name": "@oneforx/freya",
+  "version": "0.1.4",
+  "license": "MIT",
+  "homepage": "https://oneforx.net/freya",
+  "author": {
+    "email": "contact@oneforx.net",
+    "name": "oneforx",
+    "url": "https://oneforx.net"
+  },
+  "repository": {
+    "directory": "/tree/master/libs/freya",
+    "url": "https://github.com/oneforx/freya"
+  },
+  "engines": {
+    "node": ">= v12.18.4"
+  },
+  "dependencies": {
+    "react-router-dom": "6.0.2"
+  },
+  "keywords": [
+    "react-library", "front-end-library", "front",
+    "library", "atomic", "component", "component-library",
+    "atomic-component"
+  ]
+}

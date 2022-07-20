@@ -1,0 +1,28 @@
+{
+  "root": "apps/freya-e2e",
+  "sourceRoot": "apps/freya-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/freya-e2e/cypress.json",
+        "devServerTarget": "freya:storybook"
+      },
+      "configurations": {
+        "ci": {
+          "devServerTarget": "freya:storybook:ci"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/freya-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["freya"]
+}

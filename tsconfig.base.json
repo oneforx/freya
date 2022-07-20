@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@oneforx/imaeus": ["libs/imaeus/src/index.ts"]
+      "@oneforx/freya": ["libs/freya/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,9 +1,9 @@
 {
   "version": 2,
   "projects": {
-    "imaeus": "libs/imaeus",
-    "imaeus-e2e": "apps/imaeus-e2e",
-    "imaeus-front": "apps/imaeus-front",
-    "imaeus-front-e2e": "apps/imaeus-front-e2e"
+    "freya": "libs/freya",
+    "freya-e2e": "apps/freya-e2e",
+    "freya-front": "apps/freya-front",
+    "freya-front-e2e": "apps/freya-front-e2e"
   }
 }

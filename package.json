@@ -1,15 +1,15 @@
 {
-  "name": "imaeus",
+  "name": "freya",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "build-front": "NX_BASE_HREF=/imaeus/ nx build --prod --baseHref=/imaeus/",
+    "build-front": "NX_BASE_HREF=/freya/ nx build --prod --baseHref=/freya/",
     "test": "nx test",
-    "build-imaeus-css": "postcss ./libs/imaeus/src/lib/styles.css -o ./libs/imaeus/src/lib/imaeus.css",
-    "publish": "pnpm run build-imaeus-css && nx build imaeus && cd dist/libs/imaeus && npm publish --scope=@oneforx/imaeus --access=public",
-    "deploy": "gh-pages -d dist/apps/imaeus-front",
+    "build-freya-css": "postcss ./libs/freya/src/lib/styles.css -o ./libs/freya/src/lib/freya.css",
+    "publish": "pnpm run build-freya-css && nx build freya && cd dist/libs/freya && npm publish --scope=@oneforx/freya --access=public",
+    "deploy": "gh-pages -d dist/apps/freya-front",
     "pubdep": "pnpm run build-front && pnpm run deploy"
   },
   "private": false,

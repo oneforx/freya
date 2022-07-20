@@ -1,0 +1,72 @@
+{
+  "root": "apps/freya-front",
+  "sourceRoot": "apps/freya-front/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/freya-front",
+        "index": "apps/freya-front/src/index.html",
+        "baseHref": "/",
+        "main": "apps/freya-front/src/main.tsx",
+        "polyfills": "apps/freya-front/src/polyfills.ts",
+        "tsConfig": "apps/freya-front/tsconfig.app.json",
+        "assets": [
+          "apps/freya-front/src/favicon.ico",
+          "apps/freya-front/src/assets"
+        ],
+        "styles": ["apps/freya-front/src/styles.css"],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/freya-front/src/environments/environment.ts",
+              "with": "apps/freya-front/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "freya-front:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "freya-front:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/freya-front/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/freya-front"],
+      "options": {
+        "jestConfig": "apps/freya-front/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
